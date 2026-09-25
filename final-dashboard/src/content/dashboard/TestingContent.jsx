@@ -5,7 +5,7 @@ import marathiSample from '../assets/marathi-agriculture.png';
 import './testing.css';
 
 const API = window.location.hostname.endsWith('.ts.net')
-  ? `${window.location.origin}/api`
+  ? window.location.origin
   : 'http://127.0.0.1:8766';
 const SAMPLES = [
   { id:'english', label:'English', note:'Agriculture recommendations', url:englishSample, file:'english-agriculture.png' },

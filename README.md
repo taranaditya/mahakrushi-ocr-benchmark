@@ -8,7 +8,7 @@ The current OLED-black dashboard contains the latest OCR benchmark scorecards an
 cd final-dashboard
 npm ci
 npm run build
-npm run dev -- --host 127.0.0.1
+npm run dev -- --host 127.0.0.1 --port 8765 --strictPort
 ```
 
 Open the local URL printed by Vite. The scorecard is a reviewed snapshot in `final-dashboard/src/data.json`; running the dashboard does not start benchmark jobs.

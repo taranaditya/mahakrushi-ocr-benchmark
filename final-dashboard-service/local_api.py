@@ -31,7 +31,10 @@ REMOTE_COMMAND = (f'cd {shlex.quote(DGX_ROOT)} && {shlex.quote(REMOTE_PYTHON)} '
 SSH_BASE = (['ssh', '-p', DGX_PORT, '-i', str(SSH_KEY), '-o', 'IdentitiesOnly=yes',
              '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=8', '-o', 'ServerAliveInterval=30',
              '-o', 'ServerAliveCountMax=5', REMOTE] if REMOTE else [])
-ALLOWED_ORIGINS = {'http://127.0.0.1:8765', 'http://localhost:8765'} | {
+ALLOWED_ORIGINS = {
+    'http://127.0.0.1:8765', 'http://localhost:8765',
+    'http://127.0.0.1:5173', 'http://localhost:5173',
+} | {
     origin.strip() for origin in os.environ.get('OCR_BENCH_ALLOWED_ORIGINS', '').split(',') if origin.strip()
 }
 MAX_INPUT = 40 * 1024 * 1024
