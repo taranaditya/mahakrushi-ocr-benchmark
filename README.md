@@ -4,14 +4,18 @@ The current OLED-black dashboard contains the latest OCR benchmark scorecards an
 
 ## Dashboard
 
+Use Node.js 22.12+ (or 20.19+) and npm. On any computer:
+
 ```powershell
+git clone https://github.com/taranaditya/mahakrushi-ocr-benchmark.git
+cd mahakrushi-ocr-benchmark
 cd final-dashboard
 npm ci
 npm run build
 npm run dev -- --host 127.0.0.1 --port 8765 --strictPort
 ```
 
-Open the local URL printed by Vite. The scorecard is a reviewed snapshot in `final-dashboard/src/data.json`; running the dashboard does not start benchmark jobs.
+Open `http://127.0.0.1:8765`. The scorecard is a reviewed snapshot in `final-dashboard/src/data.json`; running the dashboard does not start benchmark jobs.
 
 ## Live Testing page
 
@@ -25,6 +29,8 @@ python -m venv .venv-bridge
 python -m pip install -r final-dashboard-service/requirements.txt
 ```
 
+The bridge needs Python 3.11+ and the OpenSSH client. On Linux or macOS, create the environment with `python3 -m venv .venv-bridge` and activate it with `source .venv-bridge/bin/activate`.
+
 Set the connection values in the PowerShell session that will run the bridge. Use your own approved host, account, absolute DGX project path, and SSH key path; keep them out of Git:
 
 ```powershell
@@ -35,6 +41,8 @@ $env:OCR_BENCH_DGX_ROOT = "/home/<DGX account>/<project directory>"
 $env:OCR_BENCH_SSH_KEY_PATH = "$env:USERPROFILE\.ssh\<private-key-file>"
 python .\final-dashboard-service\local_api.py
 ```
+
+On Linux or macOS, set the same variables with `export OCR_BENCH_DGX_HOST=...` and so on, then run `python final-dashboard-service/local_api.py`. The dashboard runs on each person's own computer; its local ports do not conflict with another person's computer.
 
 Run the dashboard in another terminal. For Tailscale Serve, add the exact dashboard origin to `OCR_BENCH_ALLOWED_ORIGINS` before starting the bridge and follow the private service configuration in `final-dashboard-service/README.md`. Do not expose the bridge directly to the public internet.
 

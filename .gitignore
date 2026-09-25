@@ -9,6 +9,8 @@
 # Python and Node environments/build output
 .venv/
 .venv-*/
+/.venv
+/.venv-*
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -21,6 +23,7 @@ dist/
 
 # Private or generated OCR data and model files
 /models/
+/models
 /data/
 /results/
 /tmp/
