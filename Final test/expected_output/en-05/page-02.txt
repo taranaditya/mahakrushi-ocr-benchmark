@@ -1,0 +1,117 @@
+Mahatma Phule Krishi Vidyapeeth, Rahuri
+
+gossypiella at 85 DAS.
+9. Spraying of profenophos 50% EC @ 20 ml/10 l water at 90 DAS.
+10. Use of yellow sticky traps @ 10 /ha for whitefly monitoring at 100 DAS.
+11. Spraying of triazophos 40 % EC @ 20 ml/10 l water at 105 DAS for co
+whiteflies and pink boll worm.
+12. Spraying of lambda cyhalothrin 5% EC @ 10 ml/10 l water at 120 DAS for
+control of pink boll worm.
+11 The increase of 189.86 per cent in Minimum Support Prices of cotton during 1996
+97 to 2013- 14 is not enough to cove
+inputs prices. Therefore, it is recommended that there is need to maintain the parity
+between Minimum Support Prices and input prices or there is need to give
+adequate compensation through incentives to the pro
+interest of cotton grower in Maharashtra.
+2015-16 12 The following regression equation showing interrelationship between aphid
+incidence on cotton and weather parameters is recommended.
+Equation:
+Aphid Incidence =107.734
+Where,
+Aphid-Aphid population (in equation),
+Minimum temperature (
+The resulting negative value in equation will ind
+and positive value indicates possibility of occurrence of incidence.
+13 The following regression equation showing interrelationship between jassid
+incidence on cotton and weather parameters is recommended.
+Equation:
+Jassid Incidence = 154.48
+Where,
+Jassid - Jassid population (in equation),
+Minimum temperature (
+The resulting negative value in equation will indic
+and positive value indicates possibility of occurrence of incidence.
+14 The following regression equation showing interrelationship between thrip
+incidence on cotton and weather parameters is recommended.
+Equation:
+Thrip Incidence =198.55
+Where,
+Thrip - Thrip population (in equation),
+Minimum temperature(
+speed (km hr-1)
+The resulting negative value in e
+and positive value indicates possibility of occurrence of incidence.
+15 The following regression equation showing interrelationship between whiteflies
+incidence on cotton and weather parameters is recommende
+Equation:
+Whiteflies Incidence= 41.97
+Mahatma Phule Krishi Vidyapeeth, Rahuri
+gossypiella at 85 DAS.
+Spraying of profenophos 50% EC @ 20 ml/10 l water at 90 DAS.
+Use of yellow sticky traps @ 10 /ha for whitefly monitoring at 100 DAS.
+Spraying of triazophos 40 % EC @ 20 ml/10 l water at 105 DAS for co
+whiteflies and pink boll worm.
+Spraying of lambda cyhalothrin 5% EC @ 10 ml/10 l water at 120 DAS for
+control of pink boll worm.
+The increase of 189.86 per cent in Minimum Support Prices of cotton during 1996
+14 is not enough to cove r increase in 476.87 per cent increase in the
+inputs prices. Therefore, it is recommended that there is need to maintain the parity
+between Minimum Support Prices and input prices or there is need to give
+adequate compensation through incentives to the pro ducers, so as to safeguard the
+interest of cotton grower in Maharashtra.
+The following regression equation showing interrelationship between aphid
+incidence on cotton and weather parameters is recommended.
+Aphid Incidence =107.734 - 3.085×Tmax+ 0.713×Tmin - 0.551×WS
+Aphid population (in equation), Tmax- Maximum temperature (
+Minimum temperature (°c),  WS -Wind speed (km hr-1),  RF
+The resulting negative value in equation will ind icate absence of aphid incidence
+and positive value indicates possibility of occurrence of incidence.
+The following regression equation showing interrelationship between jassid
+incidence on cotton and weather parameters is recommended.
+Incidence = 154.48-1.87×Tmax+1.21×Tmin-1.30×RH-I
+Jassid population (in equation), Tmax -Maximum temperature (
+Minimum temperature (0C), RH-I - Morning relative humidity (%).
+The resulting negative value in equation will indic ate absence of jassid incidence
+and positive value indicates possibility of occurrence of incidence.
+The following regression equation showing interrelationship between thrip
+incidence on cotton and weather parameters is recommended.
+cidence =198.55-3.23×Tmax+1.44×Tmin-1.33×RH
+Thrip population (in equation), Tmax-Maximum temperature(
+Minimum temperature( 0C), RH-I - Relative humidity morning (%), WS
+
+The resulting negative value in equation will indicate absence of thrip incidence
+and positive value indicates possibility of occurrence of incidence.
+The following regression equation showing interrelationship between whiteflies
+incidence on cotton and weather parameters is recommended.
+Whiteflies Incidence= 41.97-0.68×Tmax-0.18×RH-I-0.18×BSS
+Mahatma Phule Krishi Vidyapeeth, Rahuri
+Spraying of profenophos 50% EC @ 20 ml/10 l water at 90 DAS.
+Use of yellow sticky traps @ 10 /ha for whitefly monitoring at 100 DAS.
+Spraying of triazophos 40 % EC @ 20 ml/10 l water at 105 DAS for co ntrol of
+Spraying of lambda cyhalothrin 5% EC @ 10 ml/10 l water at 120 DAS for
+The increase of 189.86 per cent in Minimum Support Prices of cotton during 1996r increase in 476.87 per cent increase in the
+inputs prices. Therefore, it is recommended that there is need to maintain the parity
+between Minimum Support Prices and input prices or there is need to give
+ducers, so as to safeguard the
+The following regression equation showing interrelationship between aphid
+incidence on cotton and weather parameters is recommended.
+0.551×WS - 0.081×RF.
+Maximum temperature ( °C), T min -
+),  RF  -Rainfall (mm).
+icate absence of aphid incidence
+and positive value indicates possibility of occurrence of incidence.
+The following regression equation showing interrelationship between jassid
+incidence on cotton and weather parameters is recommended.
+
+Maximum temperature ( 0C), T minMorning relative humidity (%).
+ate absence of jassid incidence
+and positive value indicates possibility of occurrence of incidence.
+The following regression equation showing interrelationship between thrip
+incidence on cotton and weather parameters is recommended.
+1.33×RH-I+0.47×WS
+Maximum temperature( 0C), T minRelative humidity morning (%), WS -Wind
+quation will indicate absence of thrip incidence
+and positive value indicates possibility of occurrence of incidence.
+The following regression equation showing interrelationship between whiteflies
+d.
+0.18×BSS

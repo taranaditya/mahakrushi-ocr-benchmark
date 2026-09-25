@@ -1,0 +1,1 @@
+"""MahaKrushi OCR benchmark package."""

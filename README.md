@@ -40,6 +40,12 @@ Run the dashboard in another terminal. For Tailscale Serve, add the exact dashbo
 
 ## Scope and privacy
 
-This repository contains the latest dashboard, its three Testing-page examples, and only the support code needed by the live test flow. It does not contain model weights, user-uploaded benchmark collections, saved inference outputs, API keys, SSH keys, or DGX connection values. Live OCR uploads go to the configured DGX; they are not sent to a hosted OCR provider by this code.
+This repository contains the latest dashboard, its three Testing-page examples, the 31-page final OCR test set, and the benchmark and live testing code. It does not contain model weights, saved inference outputs, API keys, SSH keys, or DGX connection values. Live OCR uploads go to the configured DGX; they are not sent to a hosted OCR provider by this code.
 
 The benchmark snapshot is for model comparison and does not represent a production deployment or form-filling decision system. The dashboard's source and bundled Data App runtime have no license grant in this repository; ask the project owner before reusing or redistributing them.
+
+## 31-page benchmark code
+
+The `src/mahakrushi_ocr_benchmark/` package contains the original dataset contracts, model adapters, metrics, ranking, and reporting utilities. The final 31-page evaluation uses `scripts/prepare_final_test.py` and `scripts/score_final_test.py`; OCR runners are in `scripts/`. See [the benchmark guide](docs/final-benchmark.md) for reproducible commands and model-specific prerequisites.
+
+The 31 source pages and reference transcriptions are in `Final test/` so the scorecards can be reproduced. They were supplied for this evaluation; no reuse license is granted for the underlying documents. Three reference pages include editorial brackets, and references have not been independently visually verified.

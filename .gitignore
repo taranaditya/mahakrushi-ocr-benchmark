@@ -24,7 +24,9 @@ dist/
 /data/
 /results/
 /tmp/
-/Final test/
+/internal-handoff/
+/*internal-test-set*.zip
+/Final test/data/go1/manifest.jsonl
 /policy testing/
 /sample test/
 /open-route/
