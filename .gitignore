@@ -1,0 +1,41 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+
+# Python and Node environments/build output
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Private or generated OCR data and model files
+/models/
+/data/
+/results/
+/tmp/
+/Final test/
+/policy testing/
+/sample test/
+/open-route/
+/final-dashboard-source/
+/document-intake-demo/
+/MH-data-*.zip
+/ocr-form-filler.zip
+/.superpowers/
+final-dashboard-service/predictions/
+final-dashboard-service/cached_samples.json
+scripts/ssh-askpass.cmd
+**/ssh-askpass.cmd
+*.log
+*.traineddata

@@ -1,0 +1,45 @@
+# MahaKrushi OCR Dashboard
+
+The current OLED-black dashboard contains the latest OCR benchmark scorecards and a Testing page for live document OCR with Qwen2.5-VL-7B, EasyOCR, GLM-OCR, or IndicOCR.
+
+## Dashboard
+
+```powershell
+cd final-dashboard
+npm ci
+npm run build
+npm run dev -- --host 127.0.0.1
+```
+
+Open the local URL printed by Vite. The scorecard is a reviewed snapshot in `final-dashboard/src/data.json`; running the dashboard does not start benchmark jobs.
+
+## Live Testing page
+
+The Testing page needs the local bridge and an SSH-accessible DGX that already has the selected model and its runtime installed. The bridge binds to loopback only. It forwards uploaded document pages to the configured DGX, displays OCR text and a lightweight structure, and removes each temporary DGX upload after the request. Only upload documents that you are authorized to process.
+
+Install the local bridge dependencies:
+
+```powershell
+python -m venv .venv-bridge
+.\.venv-bridge\Scripts\Activate.ps1
+python -m pip install -r final-dashboard-service/requirements.txt
+```
+
+Set the connection values in the PowerShell session that will run the bridge. Use your own approved host, account, absolute DGX project path, and SSH key path; keep them out of Git:
+
+```powershell
+$env:OCR_BENCH_DGX_HOST = "<DGX host or Tailscale IP>"
+$env:OCR_BENCH_DGX_USER = "<DGX account>"
+$env:OCR_BENCH_DGX_PORT = "22"
+$env:OCR_BENCH_DGX_ROOT = "/home/<DGX account>/<project directory>"
+$env:OCR_BENCH_SSH_KEY_PATH = "$env:USERPROFILE\.ssh\<private-key-file>"
+python .\final-dashboard-service\local_api.py
+```
+
+Run the dashboard in another terminal. For Tailscale Serve, add the exact dashboard origin to `OCR_BENCH_ALLOWED_ORIGINS` before starting the bridge and follow the private service configuration in `final-dashboard-service/README.md`. Do not expose the bridge directly to the public internet.
+
+## Scope and privacy
+
+This repository contains the latest dashboard, its three Testing-page examples, and only the support code needed by the live test flow. It does not contain model weights, user-uploaded benchmark collections, saved inference outputs, API keys, SSH keys, or DGX connection values. Live OCR uploads go to the configured DGX; they are not sent to a hosted OCR provider by this code.
+
+The benchmark snapshot is for model comparison and does not represent a production deployment or form-filling decision system. The dashboard's source and bundled Data App runtime have no license grant in this repository; ask the project owner before reusing or redistributing them.
