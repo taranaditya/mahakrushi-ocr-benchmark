@@ -1,6 +1,6 @@
 # MahaKrushi OCR Dashboard
 
-The current OLED-black dashboard contains the latest OCR benchmark scorecards and a Testing page for live document OCR with Qwen2.5-VL-7B, EasyOCR, GLM-OCR, or IndicOCR.
+The current dashboard contains the latest OCR benchmark scorecards and a Testing page for live document OCR.
 
 ## Dashboard
 
